@@ -1,0 +1,50 @@
+.ContentRightView {
+    width: max-content;
+    height: max-content;
+    padding: 5px 5px;
+    position: relative;
+    left: 14px;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+
+    &__active {
+        left: 14px;
+        top: 0px;
+        background-color: #fbfbfb;
+        border: 0.4vh solid #b4b4b4;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px;
+
+        &__image {
+            width: 35px;
+            height: 35px;
+            border-radius: 0.5vw;   
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &__text {
+            font-size: 12px;
+            font-weight: 900;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        justify-content: end;
+    }
+}
